@@ -19,3 +19,14 @@ manager.display_products()
 
 # Prikazujemo ukupnu vrednost inventara
 print(f"\nUkupna vrednost inventara: {manager.total_inventory_value()}$")
+# Kreiramo korpu i dodajemo proizvode
+cart = Cart()
+cart.add_to_cart(p1)
+cart.add_to_cart(p3)
+
+# Prikazujemo sadržaj korpe
+print("\nSadržaj korpe:")
+cart.display_cart()
+
+# Prikazujemo ukupnu vrednost korpe
+print(f"\nUkupna vrednost korpe: {cart.total_cart_value()}$")
